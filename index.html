@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mrugesh Lavani - Resume & Portfolio Site" />
+  <title>Mrugesh Lavani | IT Specialist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 font-sans">
+
+  <header class="bg-blue-700 text-white text-center py-12 shadow-md">
+    <h1 class="text-4xl font-bold">Mrugesh Lavani</h1>
+    <p class="text-xl mt-2">IT Specialist | Full-Stack Developer | System Architect</p>
+    <div class="mt-4 space-x-4">
+      <a href="#contact" class="bg-white text-blue-700 px-4 py-2 rounded hover:bg-gray-200 transition">Contact Me</a>
+      <a href="resume.pdf" class="bg-white text-blue-700 px-4 py-2 rounded hover:bg-gray-200 transition">Download Resume</a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+    <section id="about">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-4">About Me</h2>
+      <p>I’m a tech-driven IT professional with a BS in Information Technology from UNCW, specializing in secure, scalable systems and self-hosted architecture using Docker, QNAP, and open-source tools. I build backend platforms, deploy server infrastructure, and love solving real-world problems with clean code.</p>
+    </section>
+
+    <section id="skills">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-4">Skills</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Languages: Python, JavaScript, Bash</li>
+        <li>Frameworks: Flask, Discord.py, Jinja</li>
+        <li>DevOps: Docker, Git, QNAP NAS, Cloudflare, Linux</li>
+        <li>Networking: IPv6, Static IPs, DNS Management</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-4">Featured Projects</h2>
+      <div class="space-y-6">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded shadow">
+          <h3 class="text-xl font-bold">BitPostage.com</h3>
+          <p class="mt-2">A full-stack platform for crypto payment processing and FedEx shipping label generation. Built with Python, Flask, and FedEx APIs, hosted on a Dockerized QNAP NAS.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded shadow">
+          <h3 class="text-xl font-bold">Homelab Infrastructure</h3>
+          <p class="mt-2">Custom self-hosted app ecosystem using Docker, running Nextcloud, MariaDB, and Discord bots. DNS managed via Cloudflare and static IP setup with IPv6.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+
+<form action="https://formspree.io/f/mnqekobp" method="POST" class="mt-6 space-y-4">
+  <div>
+    <label class="block text-sm font-medium mb-1">Your Name</label>
+    <input type="text" name="name" required class="w-full px-4 py-2 border rounded dark:bg-gray-700 dark:border-gray-600">
+  </div>
+  <div>
+    <label class="block text-sm font-medium mb-1">Your Email</label>
+    <input type="email" name="_replyto" required class="w-full px-4 py-2 border rounded dark:bg-gray-700 dark:border-gray-600">
+  </div>
+  <div>
+    <label class="block text-sm font-medium mb-1">Message</label>
+    <textarea name="message" rows="4" required class="w-full px-4 py-2 border rounded dark:bg-gray-700 dark:border-gray-600"></textarea>
+  </div>
+  <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Send</button>
+</form>
+      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2 mb-4">Contact</h2>
+      <p>Email: <a href="mailto:mrugesh@bitpostage.com" class="text-blue-500 hover:underline">mrugesh@bitpostage.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/mrugeshlavani" class="text-blue-500 hover:underline" target="_blank">linkedin.com/in/mrugeshlavani</a></p>
+      <p>GitHub: <a href="https://github.com/mrugeshlavani" class="text-blue-500 hover:underline" target="_blank">github.com/mrugeshlavani</a></p>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 bg-gray-200 dark:bg-gray-700 text-sm">
+    <p>&copy; 2025 Mrugesh Lavani. All rights reserved.</p>
+  </footer>
+</body>
+</html>
