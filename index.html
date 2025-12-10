@@ -1,28 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Site Temporarily Offline</title>
-  <meta name="robots" content="noindex">
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f9fafb;
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .message {
-      max-width: 500px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Mrugesh Lavani – Security-minded Builder & Founder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <div class="message">
-    <h1>🚧 MrugeshLavani.com is Temporarily Offline</h1>
-    <p>We're doing some maintenance or updates. Please check back later.</p>
-  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">ML</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#metrics">Impact</a>
+        <a href="#skills">Skills</a>
+        <a href="#bitpostage">BitPostage</a>
+        <a href="#cyber-lab">Cyber Lab</a>
+        <a href="#recruiters">For Recruiters</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">Graduate IT Student · Security+ · Founder @ BitPostage</p>
+          <h1>Hi, I’m <span class="accent">Mrugesh Lavani</span>.</h1>
+          <p class="hero-subtitle">
+            I design and build secure, reliable systems – from crypto-enabled shipping automation
+            to security-focused tooling – while finishing my MS in Information Technology.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Let’s talk</a>
+            <a href="resume.pdf" class="btn ghost" target="_blank">Download PDF Resume</a>
+          </div>
+          <p class="hero-note">
+            Based in Morrisville, NC · Open to internships & early-career security / infrastructure roles for 2026.
+          </p>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-card">
+            <div class="hero-card-label">Quick Snapshot</div>
+            <ul class="hero-stats">
+              <li>
+                <span class="stat-label">Security</span>
+                <span class="stat-value">CompTIA Security+</span>
+              </li>
+              <li>
+                <span class="stat-label">Current Focus</span>
+                <span class="stat-value">GSEC-level essentials, SOC skills</span>
+              </li>
+              <li>
+                <span class="stat-label">Primary Stack</span>
+                <span class="stat-value">Python · JS · Linux · Docker</span>
+              </li>
+              <li>
+                <span class="stat-label">Built</span>
+                <span class="stat-value">BitPostage.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Who I am</h2>
+          <p>
+            I’m a security-minded builder who likes to take systems from idea → deployed reality.
+            I returned for my Master of Science in Information Technology to sharpen my foundation
+            in security, systems design, and human-centered design – and I apply what I learn directly
+            into projects like BitPostage and hands-on security practice.
+          </p>
+          <p>
+            My sweet spot is the intersection of <strong>reliability</strong>, <strong>security</strong>,
+            and <strong>automation</strong>: taking messy workflows, instrumenting them, and turning
+            them into something you can trust.
+          </p>
+        </div>
+
+        <div>
+          <div class="info-card">
+            <h3>Current Focus Areas</h3>
+            <ul>
+              <li>Security operations fundamentals (log analysis, triage, access control)</li>
+              <li>Defense-in-depth and secure system design</li>
+              <li>Automation to reduce manual work and error rates</li>
+              <li>Blockchain-backed verification for high-trust data (e.g., transcripts)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Metrics / Impact -->
+    <section id="metrics" class="section bg-muted">
+      <div class="container">
+        <h2>Impact in Numbers</h2>
+        <p class="section-intro">
+          A few concrete ways I’ve improved systems through security-minded engineering and automation.
+        </p>
+
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value" data-count="18">18%</div>
+            <div class="metric-label">Improved system reliability</div>
+            <p class="metric-desc">
+              Reduced failure points and tightened workflows across projects, including BitPostage.
+            </p>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value" data-count="37">37%</div>
+            <div class="metric-label">Manual work eliminated</div>
+            <p class="metric-desc">
+              Built automation scripts (Python + Bash) to handle configuration checks and routine tasks.
+            </p>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-value" data-count="11">11%</div>
+            <div class="metric-label">Dependency risk reduction</div>
+            <p class="metric-desc">
+              Strengthened internal authorization logic and reduced dependency-based risks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Technical Skill Map</h2>
+          <p>
+            I’m strongest where security, automation, and backend development overlap.
+            Here’s a snapshot of how I currently invest my learning time.
+          </p>
+          <ul class="skills-list">
+            <li><strong>Security</strong>: Security+, defense in depth, access control, basic IR concepts</li>
+            <li><strong>Languages</strong>: Python, JavaScript, basic SQL</li>
+            <li><strong>Systems</strong>: Linux, Docker, Git, CI/CD fundamentals</li>
+            <li><strong>Cloud & Tools</strong>: AWS-style services, logging, monitoring concepts</li>
+            <li><strong>Product & UX</strong>: Human-centered design, systems thinking</li>
+          </ul>
+        </div>
+        <div class="chart-panel">
+          <canvas id="skillsRadar"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- BitPostage -->
+    <section id="bitpostage" class="section bg-muted">
+      <div class="container">
+        <h2>BitPostage – Crypto-enabled Shipping Automation</h2>
+        <p class="section-intro">
+          BitPostage is a real-world business I co-founded to automate shipping workflows with a secure,
+          developer-first backend.
+        </p>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Idea & MVP</h3>
+              <p class="timeline-meta">Aug 2023</p>
+              <p>
+                Built the first functional prototype to bridge crypto payments with shipping label generation.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Infrastructure & Reliability</h3>
+              <p class="timeline-meta">2023–2024</p>
+              <p>
+                Hardened the backend, added monitoring and logging, and improved reliability by automating recovery paths.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Security & Access Control</h3>
+              <p class="timeline-meta">Ongoing</p>
+              <p>
+                Performed access control reviews, reduced dependency-based risks, and strengthened the internal workflow.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Cyber Lab -->
+    <section id="cyber-lab" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Cyber Lab – Log Anomaly Demo</h2>
+          <p>
+            A lightweight demonstration of how I think about log analysis and anomaly detection.
+            Click <strong>Run Anomaly Detector</strong> to highlight suspicious entries in the log sample.
+          </p>
+          <button id="run-detector" class="btn primary btn-small">Run Anomaly Detector</button>
+        </div>
+
+        <div class="log-panel">
+          <div class="log-header">/var/log/app/combined.log</div>
+          <pre id="log-output" class="log-output"></pre>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Recruiters -->
+    <section id="recruiters" class="section bg-muted">
+      <div class="container two-col">
+        <div>
+          <h2>For Recruiters</h2>
+          <p>
+            If I've applied to your role, you may have received a custom access code.
+            View your tailored resume here:
+          </p>
+          <p><a href="access.html" class="link-strong">mrugeshlavani.com/access</a></p>
+        </div>
+
+        <div class="info-card">
+          <h3>Why I Built This</h3>
+          <p>
+            I approach engineering with a builder’s mindset — systems, clarity, reliability, and security.
+            This site demonstrates that thinking before you even read my resume.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Contact</h2>
+          <p><strong>Email:</strong> <a href="mailto:hire@mrugeshlavani.com">hire@mrugeshlavani.com</a></p>
+          <p><strong>Location:</strong> Morrisville, NC – open to relocation</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Contact Form</h3>
+          <p class="small">(Can be wired up later via Formspree)</p>
+          <form class="contact-form">
+            <label>Name <input type="text" /></label>
+            <label>Email <input type="email" /></label>
+            <label>Message <textarea rows="3"></textarea></label>
+            <button class="btn primary btn-small" disabled>Send (Future Feature)</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Mrugesh Lavani</span>
+      <span class="footer-tagline">Security-minded builder · MSIT · Founder @ BitPostage</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
